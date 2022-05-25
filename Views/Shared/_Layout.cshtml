@@ -1,0 +1,104 @@
+﻿@* <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - AirPlane_Mvc</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/AirPlane_Mvc.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">AirPlane_Mvc</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3"> *@
+
+
+
+            <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <script src="/js/bootstrap.min.js"></script>
+
+    <style>
+      a {
+        text-decoration: none;
+        padding-right: 45px;
+        text-align: center;
+        margin-top: 15px;
+      }
+      li {
+        display: contents;
+      }
+
+      body{
+            background-image: url(/plane.jpg);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div
+        style="
+          background-color: rgb(0, 0, 0);
+          height: 75px;
+        "
+      >
+        <ul class="menu">
+          <li><a class="btn btn-danger" href="/home/Company">Company List</a></li>
+          <li><a class="btn btn-danger" href="/home/fly">Fly List</a></li>
+          <li><a href="/home/index"><img style="height:35px;float:right;margin-right:20px;margin-top:20px ;" src="/home.PNG" alt=""></a></li>
+          <li><a href="/home/admin"><img style="height:38px;float:right;margin-right:10px;margin-top:20px;" src="/admin.PNG" alt=""></a></li>
+        </ul>
+      </div>
+    </header>
+            @RenderBody()
+        @* </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2022 - AirPlane_Mvc - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="/~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html> *@
+    <footer style="margin-top:550px;">
+      <div style="height:100px;  background-color:rgb(0, 0, 0) ;">
+        <pre style="color: whitesmoke;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil rem asperiores 
+          natus maiores obcaecati possimus voluptatum? Corporis vel reiciendis rem perspiciatis
+           repellat voluptate incidunt harum? Facilis delectus mollitia et omnis?</pre>
+
+      </div>
+    </footer>
+  </body>
+</html>
